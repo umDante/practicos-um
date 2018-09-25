@@ -1,0 +1,14 @@
+2. Generar un repositorio remoto Programación 2.Trabajo Practico 06.Consigna 02 **
+a. Crear una base de datos en MySQL 
+b. Crear una tabla Tarea con los siguientes atributos **
+i. id: autoincremental, clave primaria **
+ii. inicio: Fecha de Inicio  **
+iii. autor: Responsable de la Tarea  **
+iv. descripción: Detalle de la Tarea  **
+// c. Aplicando Singleton crear una clase para la conexión a la base de datos
+d. Crear una entidad para la tabla
+e. Crear una interface DAO para agregar, modificar, eliminar, buscar por clave y listar los
+registros almacenados
+f. Usando JDBC escribir una aplicación de consola en Java que permite agregar, modificar,
+eliminar, buscar por clave y listar los registros almacenados
+g. Hacer un git push de todas las modificaciones del repositorio local en el repositorio remoto

@@ -1,0 +1,50 @@
+Consigna:
+1. Definir una anotación propia Archivable que tenga una característica filename() **
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+
+	public @interface Archivable {
+	String filename();
+
+	}
+	
+2. Se podrá anotar con Archivable un ArrayList de alguna clase  **
+
+   /*Clase desde donde decararé el ArrayList. Por ejemplo Proyecto*/
+	class Proyecto{
+	....
+	@archivable(filename="clase.txt")
+	ArrayList<AlgunaCase> clases;
+	.....
+	}
+
+3. Definir la clase que será contenida por el ArrayList  **
+
+	class AlgunaClase{
+	...cuerpo...
+	}
+
+4. Definir una interface Guardable cuyo objetivo es implementar las funciones necesarias para
+escribir la clase que lo implementa en un archivo de texto.
+
+
+	interface Guardable{
+	save();
+	}
+
+
+Mis dusas son:  * ¿Cuáles serían las funciones necesarias para escribir la clase que lo implementa o 			   las tendría que definir yo ? 
+	        * "Escribir la clase que lo implementa en un archivo de texto" : ¿Sería guardar todas 			   las anotaciones en un archivo de texto en vez se mostrarlas por pantalla?	  	
+ 
+5. Por reflexión guardar el ArrayList anotado en un archivo de texto cuando se llame a un método
+vacío save().
+
+	
+
+
+
+
+
+
+
